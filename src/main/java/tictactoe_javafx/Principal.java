@@ -28,11 +28,19 @@ public class Principal extends Application {
 	public void start(Stage fenetrePrincipale) throws Exception {
 		J.appel(this);
 		
-		Scene scene = creerScenePrincipale();
+		Scene scenePrincipale = creerScenePrincipale();
+		
+		Stage fenetreParametre = new Stage();
+		
+		Scene sceneParametre = creerSceneParametre();
 
-		fenetrePrincipale.setScene(scene);
-
+		fenetrePrincipale.setScene(scenePrincipale);
+		
 		fenetrePrincipale.show();
+		
+		fenetreParametre.setScene(sceneParametre);
+		
+		fenetreParametre.show();
 
 	}
 
@@ -42,6 +50,18 @@ public class Principal extends Application {
 		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/principal.xml");
 
 		Scene scene = chargeur.nouvelleScene(600, 400);
+
+		DoitEtre.nonNul(scene);
+
+		return scene;
+	}
+	
+	private Scene creerSceneParametre() {
+		J.appel(this);
+
+		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/parametre.xml");
+
+		Scene scene = chargeur.nouvelleScene(300, 200);
 
 		DoitEtre.nonNul(scene);
 
