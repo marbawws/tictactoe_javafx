@@ -1,0 +1,14 @@
+.conteneurPrincipal {
+    -fx-border-color: #161620;
+	-fx-alignment: top-center;
+}
+.conteneurDifficulty {
+	-fx-alignment: center;
+	-fx-background-color: #95c5db;
+	-fx-min-width: 300px;
+    -fx-max-width: 300px;
+    -fx-min-height: 130px;
+    -fx-max-height: 130px;
+	-fx-spacing: 2;
+	
+}

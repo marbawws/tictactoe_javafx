@@ -59,7 +59,7 @@ public class Principal extends Application {
 	private Scene creerSceneParametre() {
 		J.appel(this);
 
-		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/parametre.xml");
+		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/parametre.xml", "traductions.chaines", "/css/parametre.css" );
 
 		Scene scene = chargeur.nouvelleScene(300, 200);
 
