@@ -1,12 +1,15 @@
 
 package tictactoe_javafx;
 
+import java.awt.geom.Rectangle2D;
+import javafx.*;
 import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import commun_javafx.ChargeurDeVue;
 import commun_javafx.Initialisateur;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 
@@ -41,7 +44,8 @@ public class Principal extends Application {
 		fenetreParametre.setScene(sceneParametre);
 		
 		fenetreParametre.show();
-
+		
+		
 	}
 
 	private Scene creerScenePrincipale() {
@@ -60,10 +64,21 @@ public class Principal extends Application {
 		J.appel(this);
 
 		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/parametre.xml", "traductions.chaines", "/css/parametre.css" );
-
+		
+		javafx.geometry.Rectangle2D tailleEcran = Screen.getPrimary().getVisualBounds();
+		double largeur = tailleEcran.getWidth();
+		double hauteur = tailleEcran.getHeight();
+		
+		
 		Scene scene = chargeur.nouvelleScene(300, 200);
-
+		
+		int taillePolice = (int)(largeur + hauteur) / 250;
+		String cssTaillePolice = String.format("-fx-font-size: %dpx;", taillePolice);
+		scene.getRoot().setStyle(cssTaillePolice);
+		
 		DoitEtre.nonNul(scene);
+		
+		
 
 		return scene;
 	}
