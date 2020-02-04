@@ -1,25 +1,26 @@
 .conteneurPrincipal {
-    -fx-border-color: #161620;
+    -fx-border-color: #EF5553;
+	-fx-border-width: 0.9em;
 	-fx-alignment: top-center;
 
 }
 .conteneursDifficulty {
 	-fx-alignment: center;
-	-fx-background-color: #95c5db;
+	-fx-background-color: #EF5553;
 
 	-fx-spacing: 1em;
 	-fx-font: 2em Arial;
 	
 }
 .conteneurTitre {
-    -fx-background-color: grey;
+    -fx-background-color: #EF5553;
 	-fx-alignment: top-left;
 	-fx-font: 1.5em Arial;
 }
 
 .conteneurDifficulty {
 	-fx-alignment: center;
-	-fx-background-color: #95c5db;
+	-fx-background-color: #95c5ff;
 
 	-fx-spacing: 5em;
 	-fx-font: 2em Arial;

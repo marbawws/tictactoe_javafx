@@ -1,8 +1,6 @@
 
 package tictactoe_javafx;
 
-import java.awt.geom.Rectangle2D;
-import javafx.*;
 import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import commun_javafx.ChargeurDeVue;
@@ -72,6 +70,7 @@ public class Principal extends Application {
 		
 		Scene scene = chargeur.nouvelleScene(300, 200);
 		
+		//adaption au changement de résolution
 		int taillePolice = (int)(largeur + hauteur) / 250;
 		String cssTaillePolice = String.format("-fx-font-size: %dpx;", taillePolice);
 		scene.getRoot().setStyle(cssTaillePolice);

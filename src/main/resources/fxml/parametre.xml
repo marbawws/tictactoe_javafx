@@ -6,20 +6,21 @@
 <?import javafx.scene.control.CheckBox?>
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
 	<HBox  styleClass="conteneurTitre" >
-		<Text text="Tic Tac Toe - Paramètres"/>
+		<Text text="%para"/>
 	</HBox>
 	<HBox VBox.vgrow="ALWAYS">
 		<VBox styleClass="conteneursDifficulty"  HBox.hgrow="ALWAYS">
-			<Text text="Difficulté" />
-			
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="Facile" HBox.hgrow="ALWAYS"/>
+			<Text text="%diff" />
 			</HBox>
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="Moyen" HBox.hgrow="ALWAYS"/>
+			<CheckBox text="%fac" HBox.hgrow="ALWAYS"/>
 			</HBox>
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="Impossible" HBox.hgrow="ALWAYS"/>
+			<CheckBox text="%moy" HBox.hgrow="ALWAYS"/>
+			</HBox>
+			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
+			<CheckBox text="%impo" HBox.hgrow="ALWAYS"/>
 			</HBox>
 		</VBox>
 	</HBox>
