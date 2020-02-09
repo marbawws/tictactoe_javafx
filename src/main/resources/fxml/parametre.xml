@@ -15,13 +15,13 @@
 			<Text text="%gridSize"/>
 			</HBox>
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%average" url="../images/x_rouge.png" HBox.hgrow="ALWAYS"/>
+			<CheckBoxTailleGrilleImageAnimee text="%average" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
 			</HBox>
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%big" url="../images/x_rouge.png" HBox.hgrow="ALWAYS"/>
+			<CheckBoxTailleGrilleImageAnimee text="%big" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
 			</HBox>
 			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%massive" url="../images/x_rouge.png" HBox.hgrow="ALWAYS"/>
+			<CheckBoxTailleGrilleImageAnimee text="%massive" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
 			</HBox>
 		</VBox>
 	</HBox>
