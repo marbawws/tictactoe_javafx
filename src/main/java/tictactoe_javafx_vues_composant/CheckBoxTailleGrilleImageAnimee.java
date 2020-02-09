@@ -3,12 +3,10 @@ package tictactoe_javafx_vues_composant;
 import commun.debogage.J;
 import javafx.animation.*;
 import javafx.beans.NamedArg;
-import javafx.geometry.Pos;
-import javafx.scene.image.*;
 import javafx.util.Duration;
-import vues.composants.CheckboxImageAnimee;
+import vues.composants.CheckboxImage;
 
-public class CheckBoxTailleGrilleImageAnimee extends CheckboxImageAnimee {
+public class CheckBoxTailleGrilleImageAnimee extends CheckboxImage {
 
 	private Timeline animationSurvol = new Timeline();
 

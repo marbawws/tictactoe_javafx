@@ -1,10 +1,10 @@
 
 package tictactoe_javafx;
 
-/*import commun.debogage.DoitEtre;
+import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import commun_javafx.ChargeurDeVue;
-import commun_javafx.Initialisateur;*/
+import commun_javafx.Initialisateur;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Screen;
