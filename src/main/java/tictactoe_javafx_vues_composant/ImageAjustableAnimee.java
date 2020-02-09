@@ -4,15 +4,16 @@ import commun.debogage.J;
 import javafx.animation.*;
 import javafx.beans.NamedArg;
 import javafx.util.Duration;
-import vues.composants.CheckboxImage;
+import vues.composants.ImageAjustable;
 
-public class CheckBoxTailleGrilleImageAnimee extends CheckboxImage {
+public class ImageAjustableAnimee extends ImageAjustable {
 
 	private Timeline animationSurvol = new Timeline();
 
-	public CheckBoxTailleGrilleImageAnimee(@NamedArg("url") String url) {
+	public ImageAjustableAnimee(@NamedArg("url") String url) {
 		super(url);
 		J.appel(this);
+		
 		/*
 		 * Timeline animation = new Timeline(); double tempsCle01Milisecondes = 0;
 		 * Duration tempsCle01 = new Duration(tempsCle01Milisecondes); KeyValue

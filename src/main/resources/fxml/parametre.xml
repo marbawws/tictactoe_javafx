@@ -4,25 +4,39 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.CheckBox?>
-<?import tictactoe_javafx_vues_composant.CheckBoxTailleGrilleImageAnimee?>
+<?import tictactoe_javafx_vues_composant.ImageAjustableAnimee?>
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
 	<HBox styleClass="conteneurTitre" >
 		<Text text="%para"/>
 	</HBox>
 	<HBox VBox.vgrow="ALWAYS">
 		<VBox styleClass="conteneursSizeGrid"  HBox.hgrow="ALWAYS"> 
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<Text text="%gridSize"/>
-			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%average" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
-			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%big" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
-			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-			<CheckBoxTailleGrilleImageAnimee text="%massive" url="/images/x_rouge.png" HBox.hgrow="ALWAYS"/>
-			</HBox>
+				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+					<children>
+						<Text text="%gridSize"/>
+					</children>
+				</ImageAjustableAnimee>
+	
+				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+					<children>
+						<CheckBox text="%average" HBox.hgrow="ALWAYS"/>
+					</children>
+				</ImageAjustableAnimee>
+			
+			
+				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+					<children>
+						<CheckBox text="%big" HBox.hgrow="ALWAYS"/>
+					</children>
+				</ImageAjustableAnimee>
+			
+			
+				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+					<children>
+						<CheckBox text="%massive" HBox.hgrow="ALWAYS"/>
+					</children>
+				</ImageAjustableAnimee>
+			
 		</VBox>
 	</HBox>
 </VBox>

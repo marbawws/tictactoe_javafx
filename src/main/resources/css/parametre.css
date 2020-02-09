@@ -5,7 +5,7 @@
 
 }
 .conteneursSizeGrid {
-	-fx-alignment: center;
+
 	-fx-background-color: #EF5553;
 
 	-fx-spacing: 1em;
@@ -19,7 +19,7 @@
 }
 
 .conteneurSizeGrid {
-	-fx-alignment: center;
+
 	-fx-background-color: #95c5ff;
 
 	-fx-spacing: 5em;
