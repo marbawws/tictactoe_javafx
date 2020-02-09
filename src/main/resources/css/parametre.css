@@ -4,7 +4,7 @@
 	-fx-alignment: top-center;
 
 }
-.conteneursDifficulty {
+.conteneursSizeGrid {
 	-fx-alignment: center;
 	-fx-background-color: #EF5553;
 
@@ -18,7 +18,7 @@
 	-fx-font: 1.5em Arial;
 }
 
-.conteneurDifficulty {
+.conteneurSizeGrid {
 	-fx-alignment: center;
 	-fx-background-color: #95c5ff;
 

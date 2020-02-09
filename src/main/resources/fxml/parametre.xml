@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.CheckBox?>
+<?import tictactoe_javafx_vues_composant.CheckBoxTailleGrilleImageAnimee?>
 <VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
-	<HBox  styleClass="conteneurTitre" >
+	<HBox styleClass="conteneurTitre" >
 		<Text text="%para"/>
 	</HBox>
 	<HBox VBox.vgrow="ALWAYS">
-		<VBox styleClass="conteneursDifficulty"  HBox.hgrow="ALWAYS">
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<Text text="%diff" />
+		<VBox styleClass="conteneursSizeGrid"  HBox.hgrow="ALWAYS"> 
+			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+			<Text text="%gridSize"/>
 			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="%fac" HBox.hgrow="ALWAYS"/>
+			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+			<CheckBoxTailleGrilleImageAnimee HBox.hgrow="ALWAYS"></CheckBoxTailleGrilleImageAnimee>
 			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="%moy" HBox.hgrow="ALWAYS"/>
+			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+			<CheckBoxTailleGrilleImageAnimee HBox.hgrow="ALWAYS"></CheckBoxTailleGrilleImageAnimee>
 			</HBox>
-			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurDifficulty">
-			<CheckBox text="%impo" HBox.hgrow="ALWAYS"/>
+			<HBox VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
+			<CheckBoxTailleGrilleImageAnimee HBox.hgrow="ALWAYS"></CheckBoxTailleGrilleImageAnimee>
 			</HBox>
 		</VBox>
 	</HBox>
