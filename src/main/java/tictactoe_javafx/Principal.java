@@ -67,7 +67,7 @@ public class Principal extends Application {
 		double hauteur = tailleEcran.getHeight();
 		
 		
-		Scene scene = chargeur.nouvelleScene(300, 200);
+		Scene scene = chargeur.nouvelleScene(650, 570);
 		
 		//adaption au changement de résolution
 		int taillePolice = (int)(largeur + hauteur) / 250;

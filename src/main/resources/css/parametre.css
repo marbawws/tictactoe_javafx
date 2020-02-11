@@ -10,7 +10,7 @@
 
 	-fx-spacing: 1em;
 	-fx-font: 2em Arial;
-	
+	-fx-font-weight: bolder;
 }
 .conteneurTitre {
     -fx-background-color: #EF5553;
@@ -21,8 +21,17 @@
 .conteneurSizeGrid {
 
 	-fx-background-color: #95c5ff;
-
-	-fx-spacing: 5em;
-	-fx-font: 2em Arial;
 	
 }
+
+.stackPane {
+	-fx-min-width: 1em;
+	
+}
+
+.check-box > .box > .mark{
+	-fx-padding: 0.8em;
+}
+
+
+

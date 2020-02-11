@@ -4,39 +4,47 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import tictactoe_javafx_vues_composant.ImageAjustableAnimee?>
-<VBox xmlns:fx="http://javafx.com/fxml" styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
-	<HBox styleClass="conteneurTitre" >
-		<Text text="%para"/>
+<VBox xmlns:fx="http://javafx.com/fxml"
+	styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
+	<HBox styleClass="conteneurTitre">
+		<Text text="%para" />
 	</HBox>
 	<HBox VBox.vgrow="ALWAYS">
-		<VBox styleClass="conteneursSizeGrid"  HBox.hgrow="ALWAYS"> 
-				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-					<children>
-						<Text text="%gridSize"/>
-					</children>
+		<VBox styleClass="conteneursSizeGrid" HBox.hgrow="ALWAYS">
+			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+				<HBox 
+					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+					styleClass="conteneurSizeGrid">
+				</HBox>
+				<Text text="%gridSize" styleClass="text" />
+			</StackPane>
+			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+				<ImageAjustableAnimee url="/images/x_rouge.png"
+					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-	
-				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-					<children>
-						<CheckBox text="%average" HBox.hgrow="ALWAYS"/>
-					</children>
+				<CheckBox text="%average" HBox.hgrow="ALWAYS" styleClass="check-box" />
+			</StackPane>
+			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+				<ImageAjustableAnimee url="/images/x_rouge.png"
+					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-			
-			
-				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-					<children>
-						<CheckBox text="%big" HBox.hgrow="ALWAYS"/>
-					</children>
+				<CheckBox text="%big" HBox.hgrow="ALWAYS" />
+			</StackPane>
+			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+				<ImageAjustableAnimee url="/images/x_rouge.png"
+					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-			
-			
-				<ImageAjustableAnimee  url="/images/x_rouge.png" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurSizeGrid">
-					<children>
-						<CheckBox text="%massive" HBox.hgrow="ALWAYS"/>
-					</children>
-				</ImageAjustableAnimee>
-			
+				<CheckBox text="%massive" HBox.hgrow="ALWAYS" />
+			</StackPane>
 		</VBox>
 	</HBox>
 </VBox>
