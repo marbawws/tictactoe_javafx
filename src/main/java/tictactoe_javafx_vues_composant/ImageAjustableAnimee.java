@@ -12,12 +12,12 @@ import javafx.util.Duration;
 import vues.composants.ImageAjustable;
 
 public class ImageAjustableAnimee extends ImageAjustable {
-	// bro idk
+
 	List<Image> images = new ArrayList<>();
 
 	Transition animation = new Transition() {
 		{
-			setCycleDuration(Duration.millis(1100)); // temps total que l'image reste
+			setCycleDuration(Duration.millis(1100)); 
 		}
 
 		@Override
@@ -27,7 +27,7 @@ public class ImageAjustableAnimee extends ImageAjustable {
 			imageView.setImage(images.get(index));
 			
 		}
-	};
+	}; // code venant de https://stackoverflow.com/questions/47876381/javafx-and-sprite-animation-how-do-i-make-an-animation-cycle-to-change-pictures, le champ d'instance animation
 
 	public ImageAjustableAnimee(@NamedArg("url") String url) {
 		super(url);
