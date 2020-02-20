@@ -5,9 +5,11 @@
 <?import javafx.scene.text.Text?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.layout.StackPane?>
-<?import tictactoe_javafx_vues_composant.ImageAjustableAnimee?>
+<?import tictactoe_javafx.vues.composant.ImageAjustableAnimee?>
 <VBox xmlns:fx="http://javafx.com/fxml"
-	styleClass="conteneurPrincipal" VBox.vgrow="ALWAYS">
+	styleClass="conteneurPrincipal" 
+	fx:controller="tictactoe_javafx.vues.VueParametresFX"
+	VBox.vgrow="ALWAYS">
 	<HBox styleClass="conteneurTitre">
 		<Text text="%para" />
 	</HBox>
@@ -19,7 +21,7 @@
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</HBox>
-				<Text text="%gridSize" styleClass="text" />
+				<Text text="%parametre" styleClass="text" />
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
@@ -27,7 +29,7 @@
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox text="%average" HBox.hgrow="ALWAYS" styleClass="check-box" />
+				<CheckBox fx:id="checkBoxScore" text="%afficherScore" HBox.hgrow="ALWAYS" styleClass="check-box" />
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
@@ -35,7 +37,7 @@
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox text="%big" HBox.hgrow="ALWAYS" />
+				<CheckBox fx:id="checkBoxAnimations" text="%activerAnimations" HBox.hgrow="ALWAYS" />
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
@@ -43,7 +45,7 @@
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox text="%massive" HBox.hgrow="ALWAYS" />
+				<CheckBox fx:id="checkBoxSauvegarderParametres" text="%sauvegarder" HBox.hgrow="ALWAYS" />
 			</StackPane>
 		</VBox>
 	</HBox>

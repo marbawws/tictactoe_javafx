@@ -1,4 +1,4 @@
-package tictactoe_javafx_vues_composant;
+package tictactoe_javafx.vues.composant;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import javafx.animation.*;
 import javafx.beans.NamedArg;
 import javafx.scene.image.Image;
 import javafx.util.Duration;
-import vues.composants.ImageAjustable;
+import commun_javafx.vues.composants.ImageAjustable;
 
 public class ImageAjustableAnimee extends ImageAjustable {
 
@@ -22,7 +22,6 @@ public class ImageAjustableAnimee extends ImageAjustable {
 
 		@Override
 		protected void interpolate(double fraction) {
-			
 			int index = (int) (fraction * (images.size() - 1));
 			imageView.setImage(images.get(index));
 			
@@ -50,6 +49,7 @@ public class ImageAjustableAnimee extends ImageAjustable {
 	}
 
 	private void ajouterImages(String url) {
+		J.appel(this);
 		InputStream streamImage = ImageAjustable.class.getResourceAsStream(url);
 		Image image = new Image(streamImage);
 		this.images.add(image);
