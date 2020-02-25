@@ -2,7 +2,6 @@ package tictactoe_javafx.vues.composant;
 
 import java.io.InputStream;
 
-import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
@@ -36,9 +35,6 @@ public abstract class ImageAjustable extends HBox {
 		installerListenerHauteur();
 	}
 	
-	public ImageAjustable() {
-		J.appel(this);
-	}
 	
 	private void ajusterTailleImage() {
 		J.appel(this);

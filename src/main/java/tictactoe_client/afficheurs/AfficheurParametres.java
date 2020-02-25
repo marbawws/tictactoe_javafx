@@ -15,14 +15,19 @@ public abstract class AfficheurParametres<V extends VueParametres> extends Affic
 		 boolean randomBooleanScore = modeleLectureSeule.getRandomBooleanAnimations();
 		 boolean randomBooleanSauvegarderParametres = modeleLectureSeule.getRandomBooleanSauvegarderParametres();
 		 vue.creerStateCheckBoxes(randomBooleanScore, randomBooleanAnimations, randomBooleanSauvegarderParametres);
-		 vue.startAnimation();
+		 vue.refreshCheckBoxAnimation();
+		 vue.manageAnimation(randomBooleanAnimations);
+		 
 	}
 	
 
 	@Override
 	public void rafraichirAffichage(ParametresLectureSeule modeleLectureSeule, VueParametres vue) {
 		J.appel(this);
+		//refresh stateCheckBox du component tictactoecheckbox
+		vue.refreshCheckBoxAnimation();
 		vue.manageAnimation(modeleLectureSeule.getstateCheckBoxAnimation());
+		
 
 	}
 }

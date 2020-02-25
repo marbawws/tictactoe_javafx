@@ -21,24 +21,29 @@ public class VueParametresFX implements VueParametres, Initializable {
 	private CheckBoxTictactoe checkBoxSauvegarderParametres;
 	@FXML
 	private ImageAjustableAnimee imageTictactoeAnime1;
+	@FXML
+	private ImageAjustableAnimee imageTictactoeAnime2;
+	@FXML
+	private ImageAjustableAnimee imageTictactoeAnime3;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		J.appel(this);
-		
+
 		DoitEtre.nonNul(checkBoxAnimations);
 		DoitEtre.nonNul(checkBoxSauvegarderParametres);
 		DoitEtre.nonNul(checkBoxScore);
-		
+
 	}
 
 	@Override
-	public void creerStateCheckBoxes(boolean randomBooleanScore, boolean randomBooleanAnimations, boolean randomBooleanSauvegarderParametres ) {
+	public void creerStateCheckBoxes(boolean randomBooleanScore, boolean randomBooleanAnimations,
+			boolean randomBooleanSauvegarderParametres) {
 		J.appel(this);
 		checkBoxAnimations.setSelected(randomBooleanAnimations);
 		checkBoxSauvegarderParametres.setSelected(randomBooleanSauvegarderParametres);
 		checkBoxScore.setSelected(randomBooleanScore);
-		
+
 	}
 
 	@Override
@@ -54,21 +59,26 @@ public class VueParametresFX implements VueParametres, Initializable {
 		// TODO Auto-generated method stub
 		this.checkBoxAnimations.installerCapteursStopAnimation();
 	}
-	
-	@Override
-	public void startAnimation() {
-		J.appel(this);
-		
-		imageTictactoeAnime1.startAnimation();
-	}
 
 	@Override
 	public void manageAnimation(boolean stateCheckBoxAnimation) {
+		J.appel(this);
 		// TODO Auto-generated method stub
 		if (stateCheckBoxAnimation) {
 			imageTictactoeAnime1.startAnimation();
+			imageTictactoeAnime2.startAnimation();
+			imageTictactoeAnime3.startAnimation();
 		} else {
 			imageTictactoeAnime1.stopAnimation();
+			imageTictactoeAnime2.stopAnimation();
+			imageTictactoeAnime3.stopAnimation();
 		}
+	}
+
+	@Override
+	public void refreshCheckBoxAnimation() {
+		J.appel(this);
+		// TODO Auto-generated method stub
+		checkBoxAnimations.refresh();
 	}
 }

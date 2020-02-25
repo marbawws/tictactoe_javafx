@@ -9,5 +9,5 @@ public interface ParametresLectureSeule extends ModeleLectureSeule{
 	boolean getRandomBooleanScore();
 	boolean getRandomBooleanSauvegarderParametres();
 	boolean getstateCheckBoxAnimation();
-	void setstateCheckBoxAnimation(boolean stateCheckBoxAnimation);
+	void setStateCheckBoxAnimation(boolean stateCheckBoxAnimation);
 }

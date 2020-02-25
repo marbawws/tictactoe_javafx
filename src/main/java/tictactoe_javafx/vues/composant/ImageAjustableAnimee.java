@@ -9,7 +9,6 @@ import javafx.animation.*;
 import javafx.beans.NamedArg;
 import javafx.scene.image.Image;
 import javafx.util.Duration;
-import tictactoe.modeles.parametre.Parametres;
 
 public class ImageAjustableAnimee extends ImageAjustable {
 
@@ -39,12 +38,9 @@ public class ImageAjustableAnimee extends ImageAjustable {
 
 	}
 
-	/*
-	 * public ImageAjustableAnimee(boolean stateCheckBoxAnimation) {
-	 * ajouterImages(); if (stateCheckBoxAnimation) { startAnimation(); } else {
-	 * stopAnimation(); } }
-	 */
+
 	private void ajouterImages() {
+		J.appel(this);
 		ajouterImage("/images/x_rouge.png");
 		ajouterImage("/images/animation_frame2.png");
 		ajouterImage("/images/animation_frame3.png");
@@ -74,8 +70,9 @@ public class ImageAjustableAnimee extends ImageAjustable {
 	}
 
 	public void stopAnimation() {
-
 		J.appel(this);
 		animation.stop();
+		imageView.setImage(images.get(0));
+		
 	}
 }

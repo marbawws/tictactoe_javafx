@@ -43,42 +43,19 @@ public class Parametres extends Modele<ParametresLectureSeule> implements Parame
 
 	public void stopAnimation(boolean stateCheckBox) {
 		J.appel(this);
-		setstateCheckBoxAnimation(stateCheckBox);
-	/*	imageTictactoeAnime1 = new ImageAjustableAnimee("");
-		imageTictactoeAnime2 = new ImageAjustableAnimee("");
-		imageTictactoeAnime3 = new ImageAjustableAnimee("");
-		
-		if (stateCheckBox) {
-			imageTictactoeAnime1.startAnimation();
-			imageTictactoeAnime2.startAnimation();
-			imageTictactoeAnime3.startAnimation();
-		} else {
-			imageTictactoeAnime1.stopAnimation();
-			imageTictactoeAnime2.stopAnimation();
-			imageTictactoeAnime3.stopAnimation();
-		}
-*/
-		/*if (stateCheckBox) {
-			imageTictactoeAnime1.startAnimation();
-			imageTictactoeAnime2.startAnimation();
-			imageTictactoeAnime3.startAnimation();
-		} else {
-
-			imageTictactoeAnime1.stopAnimation();
-			imageTictactoeAnime2.stopAnimation();
-			imageTictactoeAnime3.stopAnimation();
-
-		}*/
+		setStateCheckBoxAnimation(stateCheckBox);
 
 	}
 
 	@Override
 	public boolean getstateCheckBoxAnimation() {
+		J.appel(this);
 		return stateCheckBoxAnimation;
 	}
 
 	@Override
-	public void setstateCheckBoxAnimation(boolean stateCheckBoxAnimation) {
+	public void setStateCheckBoxAnimation(boolean stateCheckBoxAnimation) {
+		J.appel(this);
 		this.stateCheckBoxAnimation = stateCheckBoxAnimation;
 		
 	}
