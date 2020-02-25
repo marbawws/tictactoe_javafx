@@ -1,11 +1,13 @@
 package tictactoe.modeles.parametre;
 
 import commun.modeles.ModeleLectureSeule;
+import tictactoe_javafx.vues.composant.ImageAjustableAnimee;
 
 public interface ParametresLectureSeule extends ModeleLectureSeule{
 	
-	int getHauteurGrille();
 	boolean getRandomBooleanAnimations();
 	boolean getRandomBooleanScore();
 	boolean getRandomBooleanSauvegarderParametres();
+	boolean getstateCheckBoxAnimation();
+	void setstateCheckBoxAnimation(boolean stateCheckBoxAnimation);
 }

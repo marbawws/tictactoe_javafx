@@ -7,18 +7,21 @@ import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.CheckBox;
 import tictactoe_client.vues.VueParametres;
+import tictactoe_javafx.vues.composant.CheckBoxTictactoe;
+import tictactoe_javafx.vues.composant.ImageAjustableAnimee;
 
 public class VueParametresFX implements VueParametres, Initializable {
 
 	@FXML
-	private CheckBox checkBoxScore;
+	private CheckBoxTictactoe checkBoxScore;
 	@FXML
-	private CheckBox checkBoxAnimations;
+	private CheckBoxTictactoe checkBoxAnimations;
 	@FXML
-	private CheckBox checkBoxSauvegarderParametres;
-	
+	private CheckBoxTictactoe checkBoxSauvegarderParametres;
+	@FXML
+	private ImageAjustableAnimee imageTictactoeAnime1;
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		J.appel(this);
@@ -26,6 +29,7 @@ public class VueParametresFX implements VueParametres, Initializable {
 		DoitEtre.nonNul(checkBoxAnimations);
 		DoitEtre.nonNul(checkBoxSauvegarderParametres);
 		DoitEtre.nonNul(checkBoxScore);
+		
 	}
 
 	@Override
@@ -37,4 +41,34 @@ public class VueParametresFX implements VueParametres, Initializable {
 		
 	}
 
+	@Override
+	public void obtenirCommandesPourEnvoi() {
+		J.appel(this);
+		// TODO Auto-generated method stub
+		this.checkBoxAnimations.obtenirStopAnimationPourEnvoi();
+	}
+
+	@Override
+	public void installerCapteursEvenementsUsager() {
+		J.appel(this);
+		// TODO Auto-generated method stub
+		this.checkBoxAnimations.installerCapteursStopAnimation();
+	}
+	
+	@Override
+	public void startAnimation() {
+		J.appel(this);
+		
+		imageTictactoeAnime1.startAnimation();
+	}
+
+	@Override
+	public void manageAnimation(boolean stateCheckBoxAnimation) {
+		// TODO Auto-generated method stub
+		if (stateCheckBoxAnimation) {
+			imageTictactoeAnime1.startAnimation();
+		} else {
+			imageTictactoeAnime1.stopAnimation();
+		}
+	}
 }

@@ -8,4 +8,5 @@ import tictactoe_javafx.vues.VueParametresFX;
 public class ControleurParametresFX extends ControleurParametres<VueParametresFX, AfficheurParametresFX>{
 
 
+
 }

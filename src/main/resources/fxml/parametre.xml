@@ -6,6 +6,7 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.layout.StackPane?>
 <?import tictactoe_javafx.vues.composant.ImageAjustableAnimee?>
+<?import tictactoe_javafx.vues.composant.CheckBoxTictactoe?>
 <VBox xmlns:fx="http://javafx.com/fxml"
 	styleClass="conteneurPrincipal" 
 	fx:controller="tictactoe_javafx.vues.VueParametresFX"
@@ -25,27 +26,27 @@
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
-				<ImageAjustableAnimee url="/images/x_rouge.png"
+				<ImageAjustableAnimee fx:id="imageTictactoeAnime1" url="/images/x_rouge.png"
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox fx:id="checkBoxScore" text="%afficherScore" HBox.hgrow="ALWAYS" styleClass="check-box" />
+				<CheckBoxTictactoe fx:id="checkBoxScore" text="%afficherScore" HBox.hgrow="ALWAYS" styleClass="check-box" />
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
-				<ImageAjustableAnimee url="/images/x_rouge.png"
+				<ImageAjustableAnimee fx:id="imageTictactoeAnime2" url="/images/x_rouge.png"
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox fx:id="checkBoxAnimations" text="%activerAnimations" HBox.hgrow="ALWAYS" />
+				<CheckBoxTictactoe fx:id="checkBoxAnimations" text="%activerAnimations" HBox.hgrow="ALWAYS" />
 			</StackPane>
 			<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 				styleClass="stackPane">
-				<ImageAjustableAnimee url="/images/x_rouge.png"
+				<ImageAjustableAnimee fx:id="imageTictactoeAnime3" url="/images/x_rouge.png"
 					HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
 					styleClass="conteneurSizeGrid">
 				</ImageAjustableAnimee>
-				<CheckBox fx:id="checkBoxSauvegarderParametres" text="%sauvegarder" HBox.hgrow="ALWAYS" />
+				<CheckBoxTictactoe fx:id="checkBoxSauvegarderParametres" text="%sauvegarder" HBox.hgrow="ALWAYS" />
 			</StackPane>
 		</VBox>
 	</HBox>
