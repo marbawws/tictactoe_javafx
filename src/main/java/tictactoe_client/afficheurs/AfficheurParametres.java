@@ -9,7 +9,7 @@ import tictactoe_javafx.vues.VueParametresFX;
 public abstract class AfficheurParametres<V extends VueParametres> extends Afficheur<ParametresLectureSeule, V> {
 
 	@Override
-	public void initialiserAffichage(ParametresLectureSeule modeleLectureSeule, VueParametres vue) {
+	public void initialiserAffichage(ParametresLectureSeule modeleLectureSeule, V/*TODO*/ vue) {
 		J.appel(this);
 		 boolean randomBooleanAnimations = modeleLectureSeule.getRandomBooleanAnimations();
 		 boolean randomBooleanScore = modeleLectureSeule.getRandomBooleanAnimations();
@@ -22,7 +22,7 @@ public abstract class AfficheurParametres<V extends VueParametres> extends Affic
 	
 
 	@Override
-	public void rafraichirAffichage(ParametresLectureSeule modeleLectureSeule, VueParametres vue) {
+	public void rafraichirAffichage(ParametresLectureSeule modeleLectureSeule, V vue) {
 		J.appel(this);
 		//refresh stateCheckBox du component tictactoecheckbox
 		vue.refreshCheckBoxAnimation();

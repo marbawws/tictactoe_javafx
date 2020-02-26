@@ -4,6 +4,7 @@ import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import commun_client.mvc.controleurs.FabriqueControleur;
 import commun_javafx.ChargeurDeVue;
+import commun_javafx.DialogueModal;
 import commun_javafx.Initialisateur;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -13,7 +14,9 @@ import tictactoe.modeles.parametre.Parametres;
 import tictactoe_client.vues.VueParametres;
 import tictactoe_javafx.afficheurs.AfficheurParametresFX;
 import tictactoe_javafx.controleurs.ControleurParametresFX;
+import tictactoe_javafx.controleurs.ControleurPrincipalFX;
 import tictactoe_javafx.vues.VueParametresFX;
+import tictactoe_javafx.vues.VuePrincipalFX;
 
 public class Principal extends Application {
 
@@ -32,6 +35,21 @@ public class Principal extends Application {
 	@Override
 	public void start(Stage fenetrePrincipale) throws Exception {
 		J.appel(this);
+		
+		DialogueModal.enregistreFenetrePrincipale(fenetrePrincipale);
+		
+		ChargeurDeVue<VuePrincipalFX> chargeur;
+	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml",
+	                                                  "traductions.chaines",
+	                                                  "/css/principal.css");
+
+	    VuePrincipalFX vue = chargeur.getVue();
+	    
+	    DoitEtre.nonNul(vue);
+	    
+	    FabriqueControleur.creerControleur(ControleurPrincipalFX.class, 
+                vue);
+
 
 		Scene scenePrincipale = creerScenePrincipale();
 
@@ -65,7 +83,7 @@ public class Principal extends Application {
 		J.appel(this);
 
 		ChargeurDeVue<VueParametresFX> chargeur;
-		chargeur = new ChargeurDeVue("/fxml/parametre.xml", "traductions.chaines", "/css/parametre.css");
+		chargeur = new ChargeurDeVue<VueParametresFX>("/fxml/parametre.xml", "traductions.chaines", "/css/parametre.css");
 		VueParametresFX vue = chargeur.getVue();
 		DoitEtre.nonNul(vue);
 		Parametres parametres = new Parametres();
