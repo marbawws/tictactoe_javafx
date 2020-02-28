@@ -7,6 +7,11 @@ import commun.debogage.DoitEtre;
 import commun.debogage.J;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.MenuItem;
+import javafx.scene.layout.VBox;
+import tictactoe_client.commandes.nouvellePartie.NouvellePartiePourEnvoi;
+import tictactoe_client.commandes.ouvrirParametres.OuvrirParametresPourEnvoi;
+import tictactoe_client.commandes.quitter.QuitterPourEnvoi;
 import tictactoe_client.vues.VueParametres;
 import tictactoe_javafx.vues.composant.CheckBoxTictactoe;
 import tictactoe_javafx.vues.composant.ImageAjustableAnimee;
@@ -25,7 +30,7 @@ public class VueParametresFX implements VueParametres, Initializable {
 	private ImageAjustableAnimee imageTictactoeAnime2;
 	@FXML
 	private ImageAjustableAnimee imageTictactoeAnime3;
-
+	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		J.appel(this);

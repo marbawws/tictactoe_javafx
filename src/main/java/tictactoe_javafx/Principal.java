@@ -14,8 +14,10 @@ import tictactoe.modeles.parametre.Parametres;
 import tictactoe_client.vues.VueParametres;
 import tictactoe_javafx.afficheurs.AfficheurParametresFX;
 import tictactoe_javafx.controleurs.ControleurParametresFX;
+import tictactoe_javafx.controleurs.ControleurPartieLocaleFX;
 import tictactoe_javafx.controleurs.ControleurPrincipalFX;
 import tictactoe_javafx.vues.VueParametresFX;
+import tictactoe_javafx.vues.VuePartieLocaleFX;
 import tictactoe_javafx.vues.VuePrincipalFX;
 
 public class Principal extends Application {
@@ -42,7 +44,13 @@ public class Principal extends Application {
 	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml",
 	                                                  "traductions.chaines",
 	                                                  "/css/principal.css");
+	    
+	    Scene scene = chargeur.nouvelleScene(600, 400);
+	    
+	    fenetrePrincipale.setScene(scene);
 
+	    fenetrePrincipale.show();
+	    
 	    VuePrincipalFX vue = chargeur.getVue();
 	    
 	    DoitEtre.nonNul(vue);
@@ -51,35 +59,35 @@ public class Principal extends Application {
                 vue);
 
 
-		Scene scenePrincipale = creerScenePrincipale();
+		//Scene scenePrincipale = creerScenePrincipale();
 
-		Stage fenetreParametre = new Stage();
+		//Stage fenetreParametre = new Stage();
 
-		Scene sceneParametre = creerSceneParametre();
+		//Scene sceneParametre = creerSceneParametre();
 
-		fenetrePrincipale.setScene(scenePrincipale);
+		//fenetrePrincipale.setScene(scenePrincipale);
 
-		fenetrePrincipale.show();
+		//fenetrePrincipale.show();
 
-		fenetreParametre.setScene(sceneParametre);
+		/*fenetreParametre.setScene(sceneParametre);
 
-		fenetreParametre.show();
+		fenetreParametre.show();*/
 
 	}
 
-	private Scene creerScenePrincipale() {
+	/*private Scene creerScenePrincipale() {
 		J.appel(this);
 
-		ChargeurDeVue chargeur = new ChargeurDeVue("/fxml/principal.xml", "traductions.chaines", "/css/parametre.css");
+		ChargeurDeVue chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml", "traductions.chaines", "/css/parametre.css");
 
 		Scene scene = chargeur.nouvelleScene(600, 400);
 
 		DoitEtre.nonNul(scene);
 
 		return scene;
-	}
+	}*/
 
-	private Scene creerSceneParametre() {
+	/*private Scene creerSceneParametre() {
 		J.appel(this);
 
 		ChargeurDeVue<VueParametresFX> chargeur;
@@ -99,9 +107,9 @@ public class Principal extends Application {
 		DoitEtre.nonNul(scene);
 
 		return scene;
-	}
+	}*/
 	
-	private String createCssTaillePolice() {
+	/*private String createCssTaillePolice() {
 		J.appel(this);
 		javafx.geometry.Rectangle2D tailleEcran = Screen.getPrimary().getVisualBounds();
 		double largeur = tailleEcran.getWidth();
@@ -111,7 +119,7 @@ public class Principal extends Application {
 		int taillePolice = (int) (largeur + hauteur) / 250;
 		String cssTaillePolice = String.format("-fx-font-size: %dpx;", taillePolice);
 		return cssTaillePolice;
-	}
+	}*/
 
 	@Override
 	public void stop() {
