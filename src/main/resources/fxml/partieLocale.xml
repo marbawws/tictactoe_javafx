@@ -4,8 +4,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.text.*?>
-
+<?import tictactoe_javafx.vues.composant.ContenantGrille?>
+<?import tictactoe_javafx.vues.composant.ContenantLigne?>
+<?import tictactoe_javafx.vues.composant.Case?>
 <VBox xmlns:fx="http://javafx.com/fxml"
-    fx:controller="tictactoe_javafx.vues.VuePartieLocaleFX" styleClass="fenetrePrincipale">
-  
+    fx:controller="tictactoe_javafx.vues.VuePartieLocaleFX" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  <ContenantGrille HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  		<Case></Case>
+  		<Case></Case>
+  		<Case></Case>
+  	</ContenantLigne>
+  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  		<Case></Case>
+  		<Case></Case>
+  		<Case></Case>
+  	</ContenantLigne>
+  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  		<Case></Case>
+  		<Case></Case>
+  		<Case></Case>
+  	</ContenantLigne>
+  </ContenantGrille>
 </VBox>
