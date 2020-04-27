@@ -42,7 +42,7 @@ public class Principal extends Application {
 		
 		ChargeurDeVue<VuePrincipalFX> chargeur;
 	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml",
-	                                                  "traductions.chaines",
+	                                                  "traductios.chaines",
 	                                                  "/css/principal.css");
 	    
 	    Scene scene = chargeur.nouvelleScene(800, 600);
