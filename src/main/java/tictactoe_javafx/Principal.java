@@ -41,11 +41,11 @@ public class Principal extends Application {
 		DialogueModal.enregistreFenetrePrincipale(fenetrePrincipale);
 		
 		ChargeurDeVue<VuePrincipalFX> chargeur;
-	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml",
+	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principa.xml",
 	                                                  "traductions.chaines",
 	                                                  "/css/principal.css");
 	    
-	    Scene scene = chargeur.nouvelleScene(600, 400);
+	    Scene scene = chargeur.nouvelleScene(800, 600);
 	    
 	    fenetrePrincipale.setScene(scene);
 

@@ -1,1 +1,16 @@
+.conteneurPrincipal {
+    -fx-border-color: #EF5553;
 
+
+}
+
+.custom-button {
+    -fx-font: 5em "Serif";
+    -fx-padding: 5em 13em 1em 1em;
+    -fx-background-color: #EF5553;
+	-fx-alignment:center;
+}
+
+.separateur {
+	-fx-max-witdh: 1em;
+}

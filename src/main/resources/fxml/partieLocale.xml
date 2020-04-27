@@ -7,23 +7,46 @@
 <?import tictactoe_javafx.vues.composant.ContenantGrille?>
 <?import tictactoe_javafx.vues.composant.ContenantLigne?>
 <?import tictactoe_javafx.vues.composant.Case?>
+<?import javafx.scene.layout.StackPane?>
 <VBox xmlns:fx="http://javafx.com/fxml"
-    fx:controller="tictactoe_javafx.vues.VuePartieLocaleFX" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+    fx:controller="tictactoe_javafx.vues.VuePartieLocaleFX" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="conteneurPrincipal">
   <ContenantGrille HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
-  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
-  		<Case></Case>
-  		<Case></Case>
-  		<Case></Case>
-  	</ContenantLigne>
-  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
-  		<Case></Case>
-  		<Case></Case>
-  		<Case></Case>
-  	</ContenantLigne>
-  	<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
-  		<Case></Case>
-  		<Case></Case>
-  		<Case></Case>
-  	</ContenantLigne>
+  
+  	<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+  		<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case1"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case2"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case3"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  		</ContenantLigne>
+  	</StackPane>
+  	<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+  		<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case4"></Case>
+			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case5"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case6"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  		</ContenantLigne>
+  	</StackPane>
+  	<StackPane HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS"
+				styleClass="stackPane">
+  		<ContenantLigne HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case7"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case8"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  			<Case HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" styleClass="custom-button" fx:id="case9"></Case>
+  			<HBox HBox.hgrow="ALWAYS" styleClass="separateur"></HBox>
+  		</ContenantLigne>
+  	</StackPane>
   </ContenantGrille>
 </VBox>
