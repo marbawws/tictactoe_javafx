@@ -41,7 +41,7 @@ public class Principal extends Application {
 		DialogueModal.enregistreFenetrePrincipale(fenetrePrincipale);
 		
 		ChargeurDeVue<VuePrincipalFX> chargeur;
-	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principa.xml",
+	    chargeur = new ChargeurDeVue<VuePrincipalFX>("/fxml/principal.xml",
 	                                                  "traductions.chaines",
 	                                                  "/css/principal.css");
 	    
