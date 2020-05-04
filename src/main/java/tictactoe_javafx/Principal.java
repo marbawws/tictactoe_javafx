@@ -45,7 +45,7 @@ public class Principal extends Application {
 	                                                  "traductions.chaines",
 	                                                  "/css/principal.css");
 	    
-	    Scene scene = chargeur.nouvelleScene(600, 400);
+	    Scene scene = chargeur.nouvelleScene(800, 600);
 	    
 	    fenetrePrincipale.setScene(scene);
 

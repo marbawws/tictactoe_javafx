@@ -18,7 +18,8 @@ public abstract class AfficheurPartieLocale<V extends VuePartieLocale> extends A
 	@Override
 	public void rafraichirAffichage(PartieLocaleLectureSeule modeleLectureSeule, V vue) {
 		J.appel(this);
-		// TODO Auto-generated method stub
+		
+		vue.changerSymboles(modeleLectureSeule.getNombreCase());
 		
 	}
 
