@@ -81,4 +81,10 @@ public class VueParametresFX implements VueParametres, Initializable {
 		// TODO Auto-generated method stub
 		checkBoxAnimations.refresh();
 	}
+
+	@Override
+	public void verifierCommandesPossibles() {
+		// TODO Auto-generated method stub
+		
+	}
 }

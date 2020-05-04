@@ -126,4 +126,10 @@ public class VuePartieLocaleFX implements VuePartieLocale, Initializable{
 		}
 	}
 
+	@Override
+	public void verifierCommandesPossibles() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
